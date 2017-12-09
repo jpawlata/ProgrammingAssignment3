@@ -67,7 +67,8 @@ New dataset contnains variables limited to means and stds only:
 [69] "fbodygyro-meanfreq-z"      "fbodyaccmag-mean"          "fbodyaccmag-std"           "fbodyaccmag-meanfreq"     
 [73] "fbodyaccjerkmag-mean"      "fbodyaccjerkmag-std"       "fbodyaccjerkmag-meanfreq"  "fbodygyromag-mean"        
 [77] "fbodygyromag-std"          "fbodygyromag-meanfreq"     "fbodygyrojerkmag-mean"     "fbodygyrojerkmag-std"     
-[81] "fbodygyrojerkmag-meanfreq" "activityid" ```
+[81] "fbodygyrojerkmag-meanfreq" "activityid" 
+```
 
 ## *run_analysis.R* script - variables
 
