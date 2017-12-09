@@ -15,6 +15,33 @@
 
 (All files are in txt format)
 
+## Dataset's variables
+
+### activity_labels:
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+### subject:
+subject table contains ids (from 1 to 30)
+
+### x_all:
+tBodyAcc-mean()-X
+tBodyAcc-mean()-Y
+tBodyAcc-mean()-Z
+tBodyAcc-std()-X
+tBodyAcc-std()-Y
+tBodyAcc-std()-Z
+tBodyAcc-mad()-X
+tBodyAcc-mad()-Y
+tBodyAcc-mad()-Z
+tBodyAcc-max()-X
+tBodyAcc-max()-Y e.t.c
+(data measured during the experiment)
+
 ## *run_analysis.R* script - variables
 
 All variables used in the script:
