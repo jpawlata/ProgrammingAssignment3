@@ -18,29 +18,56 @@
 ## Dataset's variables
 
 ### activity_labels:
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
 
 ### subject:
-subject table contains ids (from 1 to 30)
+subject table contains an id of each volunteer (number from 1 to 30)
 
 ### x_all:
-tBodyAcc-mean()-X
-tBodyAcc-mean()-Y
-tBodyAcc-mean()-Z
-tBodyAcc-std()-X
-tBodyAcc-std()-Y
-tBodyAcc-std()-Z
-tBodyAcc-mad()-X
-tBodyAcc-mad()-Y
-tBodyAcc-mad()-Z
-tBodyAcc-max()-X
-tBodyAcc-max()-Y e.t.c
+* tBodyAcc-mean()-X
+* tBodyAcc-mean()-Y
+* tBodyAcc-mean()-Z
+* tBodyAcc-std()-X
+* tBodyAcc-std()-Y
+* tBodyAcc-std()-Z
+* tBodyAcc-mad()-X
+* tBodyAcc-mad()-Y
+* tBodyAcc-mad()-Z
+* tBodyAcc-max()-X
+* tBodyAcc-max()-Y 
+* e.t.c
 (data measured during the experiment)
+
+New dataset contnains variables limited to means and stds only:
+
+```names(avgdata)```:
+```
+ [1] "subjectid"                 "activity"                  "tbodyacc-mean-x"           "tbodyacc-mean-y"          
+ [5] "tbodyacc-mean-z"           "tbodyacc-std-x"            "tbodyacc-std-y"            "tbodyacc-std-z"           
+ [9] "tgravityacc-mean-x"        "tgravityacc-mean-y"        "tgravityacc-mean-z"        "tgravityacc-std-x"        
+[13] "tgravityacc-std-y"         "tgravityacc-std-z"         "tbodyaccjerk-mean-x"       "tbodyaccjerk-mean-y"      
+[17] "tbodyaccjerk-mean-z"       "tbodyaccjerk-std-x"        "tbodyaccjerk-std-y"        "tbodyaccjerk-std-z"       
+[21] "tbodygyro-mean-x"          "tbodygyro-mean-y"          "tbodygyro-mean-z"          "tbodygyro-std-x"          
+[25] "tbodygyro-std-y"           "tbodygyro-std-z"           "tbodygyrojerk-mean-x"      "tbodygyrojerk-mean-y"     
+[29] "tbodygyrojerk-mean-z"      "tbodygyrojerk-std-x"       "tbodygyrojerk-std-y"       "tbodygyrojerk-std-z"      
+[33] "tbodyaccmag-mean"          "tbodyaccmag-std"           "tgravityaccmag-mean"       "tgravityaccmag-std"       
+[37] "tbodyaccjerkmag-mean"      "tbodyaccjerkmag-std"       "tbodygyromag-mean"         "tbodygyromag-std"         
+[41] "tbodygyrojerkmag-mean"     "tbodygyrojerkmag-std"      "fbodyacc-mean-x"           "fbodyacc-mean-y"          
+[45] "fbodyacc-mean-z"           "fbodyacc-std-x"            "fbodyacc-std-y"            "fbodyacc-std-z"           
+[49] "fbodyacc-meanfreq-x"       "fbodyacc-meanfreq-y"       "fbodyacc-meanfreq-z"       "fbodyaccjerk-mean-x"      
+[53] "fbodyaccjerk-mean-y"       "fbodyaccjerk-mean-z"       "fbodyaccjerk-std-x"        "fbodyaccjerk-std-y"       
+[57] "fbodyaccjerk-std-z"        "fbodyaccjerk-meanfreq-x"   "fbodyaccjerk-meanfreq-y"   "fbodyaccjerk-meanfreq-z"  
+[61] "fbodygyro-mean-x"          "fbodygyro-mean-y"          "fbodygyro-mean-z"          "fbodygyro-std-x"          
+[65] "fbodygyro-std-y"           "fbodygyro-std-z"           "fbodygyro-meanfreq-x"      "fbodygyro-meanfreq-y"     
+[69] "fbodygyro-meanfreq-z"      "fbodyaccmag-mean"          "fbodyaccmag-std"           "fbodyaccmag-meanfreq"     
+[73] "fbodyaccjerkmag-mean"      "fbodyaccjerkmag-std"       "fbodyaccjerkmag-meanfreq"  "fbodygyromag-mean"        
+[77] "fbodygyromag-std"          "fbodygyromag-meanfreq"     "fbodygyrojerkmag-mean"     "fbodygyrojerkmag-std"     
+[81] "fbodygyrojerkmag-meanfreq" "activityid" ```
 
 ## *run_analysis.R* script - variables
 
