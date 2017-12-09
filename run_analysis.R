@@ -48,10 +48,10 @@ data_extracted <- x_all[extract] #dataset with mean and std only
 # 3. Uses descriptive activity names to name the activities in the data set
 
 # Bind x, y and subject datasets to get one dataset with all information
-data_all <- cbind(x_all, y_all, subject_all)
+data_all <- cbind(data_extracted, y_all, subject_all)
 # Merge new dataset with activity labels
 merged <- merge(data_all, activity_labels, by.x = "activity_id", by.y = "id")
-mergedDF <- merged[,c(2:564, 1)] # Move first column at the end of the dataset, just to improve readibility
+mergedDF <- merged[,c(2:82, 1)] # Move first column at the end of the dataset, just to improve readability
 
 
 # 4. Appropriately labels the data set with descriptive variable names
